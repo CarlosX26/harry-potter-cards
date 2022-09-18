@@ -1,0 +1,123 @@
+
+:root{
+    --darkRed: #740001;
+    --Red: #ae0001;
+    --yellow: #eeba30;
+    --yellowDark: #d3a625;
+    --darkGray: #303134;
+}
+
+.cabecalho{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.cabecalho__logo{
+    width: 130px;
+    
+}
+body{
+    background: var(--yellowDark);
+}
+.container{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.card__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card__item{
+    background: linear-gradient(180deg, #d3a625, #740001);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+.card__img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card__name{    
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+    white-space: nowrap;
+}
+.card__house{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.card__ator{
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+.card__date{
+    color: #fff;
+    margin-bottom: 10px;
+
+}  
+@media (max-width: 480px){
+    .cabecalho{
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .cabecalho__logo{
+        width: 130px;
+        
+    }
+    body{
+        background-color: var(--yellowDark);
+    }
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .card__list{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .card__item{
+        background: linear-gradient(180deg, #d3a625, #740001);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .card__img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+    .card__name{    
+        color: #fff;
+    }
+    .card__house{
+        color: #fff;
+    }
+    .card__ator{
+        color: #fff;
+    }
+    .card__date{
+        color: #fff;
+    }  
+}
+
