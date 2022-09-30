@@ -1,17 +1,17 @@
 class HarryPotter {
-  static async obterDados() {
+  static async getData() {
     try {
-      const dados = await fetch(
-        "http://hp-api.herokuapp.com/api/characters/students"
+      const data = await fetch(
+        "https://hp-api.onrender.com/api/characters/students"
       );
-      const tratarDados = await dados.json();
-      return tratarDados;
+      const dataJson = await data.json();
+      return dataJson;
     } catch (err) {
       console.log(err);
     }
   }
 
-  static renderizaCards(image, name, house, actor, dateOfBirth) {
+  static renderCards(image, name, house, actor, dateOfBirth) {
     const cardList = document.querySelector(".card__list");
     const li = document.createElement("li");
     const img = document.createElement("img");

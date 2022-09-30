@@ -1,13 +1,10 @@
-import HarryPotter from "./classHp.js"
+import HarryPotter from "./classHp.js";
 
-const dados = await HarryPotter.obterDados()
+const data = await HarryPotter.getData();
 
-dados.forEach(({ image, name, house, actor, dateOfBirth})=> {
-    if(image === ""){
-        return    
-    }
-    HarryPotter.renderizaCards(image, name, house, actor, dateOfBirth)
+data.forEach(({ image, name, house, actor, dateOfBirth }) => {
+  if (image === "") {
+    return;
+  }
+  HarryPotter.renderCards(image, name, house, actor, dateOfBirth);
 });
-
-
-
