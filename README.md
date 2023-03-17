@@ -7,7 +7,7 @@ Este projeto tem como objetivo consumir a API do Harry Potter para gerar posters
 Clone o projeto
 
 ```bash
-  git@github.com:CarlosX26/harry-potter-cards.git
+  git clone git@github.com:CarlosX26/harry-potter-cards.git
 ```
 
 Entre no diretório do projeto
